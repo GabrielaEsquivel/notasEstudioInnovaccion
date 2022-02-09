@@ -1,0 +1,27 @@
+# Trabajar con paquetes
+# La mayoría de los programas que escribas se basarán en 
+# código escrito por otros. Este código a menudo viene en 
+# forma de paquetes, que son módulos externos o
+# bibliotecas que se incluyen en el proyecto.
+
+# ¿Qué es un entorno virtual?
+# una máquina de desarrollo. Un entorno virtual es una copia
+#  autónoma de todo lo necesario para ejecutar el programa.
+
+# Crear un entorno virtual
+# Para crear un entorno virtual, llama al módulo. 
+# El módulo espera un nombre como argumento venv.
+# Paso 1. Desde la terminal, abrir la carpeta deseada para el proyecto
+# Paso 2. ejecutar python3 -m venv env
+# Paso 3.  ejecutar  source env/bin/activate 
+# Paso 4. hacer instalaciones necesarias
+
+
+# Otras maneras de instalar
+# Bash | Consola
+# cd <to where the package is on your machine>
+# python3 -m pip install .
+
+# git+https://github.com/your-repo.git
+
+# python3 -m pip install package.tar.gz
