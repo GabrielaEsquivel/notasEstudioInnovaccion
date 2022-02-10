@@ -1,0 +1,123 @@
+##### LÓGICA BOOLEANA 
+ Los booleanos son un tipo común en Python. 
+ Su valor solo puede ser una de dos cosas: verdadero o falso. 
+ Comprenderlos nos ayuda para escribir "lógica condicional".
+
+ Condicional If
+ Cuando usamos la condicional/declaración If comúnmente iremos de la
+ mano con estos operadores matemáticos:
+ Iguales: a == b
+ No es igual: a != b
+ Menos que: a < b
+ Menor o igual que: a <= b
+ Mayor que: a > b
+ Mayor o igual que: a >= 
+
+La sintaxis (estructura) de una sentencia If es siempre la misma:
+
+ if expresion_prueba:
+    # intrucción(es) a ejecutar
+
+Ejemplo: 
+# Aplica el tip de práctica 1.
+    a = 93
+    b = 27
+    if a >= b:
+        print(a)
+
+La forma en la que se lee ese bloque de código es la siguiente:
+A la letra 'a' le asigno el valor de 93.
+A la letra 'b' le asigno el valor de 27.
+SI a(93) es mayor o igual a b(27) entonces:
+Muestra (print) el valor de a(93)
+
+**** Nota a considerar: 
+En Python, el cuerpo de una instrucción if debe tener sangría . 
+Siempre se ejecutará cualquier código que siga a una expresión 
+de prueba que no tenga sangría.
+
+
+Else y Elif
+Cuando se utiliza if, else, y elif en combinación, se pueden 
+escribir programas complejos con varias expresiones de prueba y 
+sentencias para ejecutar pues nos permiten explorar más casos 
+o condiciones. 
+
+Para agregar un bloque de código a ejecutar cuando el caso de la
+condición arroje un FALSE, se debe utilizar ELSE.
+
+if expresion_prueba:
+    # instrucción(es) a ejecutar
+else:
+    # instrucción(es) a ejecutar
+
+Si la expresión de prueba es False, 
+se omite el código del cuerpo de la instrucción if y el programa continúa 
+ejecutándose desde la instrucción else. 
+
+
+El uso de instrucciones elif te permite agregar varias expresiones 
+de prueba al programa.
+
+if expresion_prueba:
+    # instrucción(es) a ejecutar
+elif expresion_prueba:
+    # instrucción(es) a ejecutar
+
+
+Un bloque de código que utiliza los tres tipos de instrucciones tiene la sintaxis siguiente:
+
+if expresion_prueba:
+    # instrucción(es) a ejecutar
+elif expresion_prueba:
+    # instrucción(es) a ejecutar
+elif expresion_prueba:
+    # instrucción(es) a ejecutar
+else:
+    # instrucción(es) a ejecutar
+
+
+La lógica condicional anidada sigue las mismas reglas que la lógica 
+condicional normal dentro de cada bloque de código. Aquí hay un ejemplo 
+de la sintaxis:
+
+if expresion_prueba:
+    # instrucción(es) a ejecutar
+    if expresion_prueba:
+        # instrucción(es) a ejecutar
+    else: 
+        # instrucción(es) a ejecutar
+elif expresion_prueba:
+    # instrucción(es) a ejecutar
+    if expresion_prueba:
+        # instrucción(es) a ejecutar
+    else: 
+        # instrucción(es) a ejecutar
+else:
+    # instrucción(es) a ejecutar
+
+
+
+Operadores and y or
+
+or
+Puede conectar dos expresiones booleanas o de prueba mediante el operador 
+booleano or.
+
+Para que toda la expresión se evalúe en True, al menos una de las 
+subexpresiones debe ser verdadera. Si ninguna de las subexpresiones es 
+verdadera, toda la expresión se evalúa en False. 
+
+Una expresión booleana que utiliza or tiene la sintaxis siguiente:
+
+subexpresión1 or subexpresión2
+
+
+and
+Ambas condiciones de la expresión de prueba deben ser verdaderas para que 
+toda la expresión de prueba se evalúe en True. En cualquier otro caso, 
+la expresión de prueba es False.
+
+subexpresión1 and subexpresión2
+
+
