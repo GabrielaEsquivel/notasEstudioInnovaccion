@@ -1,0 +1,72 @@
+Operadores en Python
+Por lo general, las matemáticas implican alrededor de cuatro 
+operaciones principales: suma, resta, multiplicación y división.
+
+Los más comunes:
+
+----- Suma ------
+En python usamos + para indicar la adición. Usando + entre dos números 
+los suma y proporciona el total.
+
+------ Resta -------
+Del mismo modo, Python utiliza - para la resta. El uso de - entre dos 
+números resta los dos números y proporciona la diferencia.
+
+------ multiplicación ------
+En Python *, es el operador de multiplicación.
+Proporciona el producto de dos números.
+
+------ División -------
+Por último, se utiliza / para la división.  Proporciona el cociente de
+ dos números.
+
+
+
+Jerarquía Operaciones
+
+Python respeta el orden de operación para las matemáticas. El orden de
+operación dicta que las expresiones deben evaluarse en el siguiente 
+orden:
+
+1.- Paréntesis
+2.- Exponentes
+3.- Multiplicación y división
+4.- Suma y resta
+
+
+Trajando con números en Python 
+
+---- Conviertiendo cadenas a números ----
+Python admite dos tipos principales de números: enteros (o int) y 
+coma flotante (o float). La diferencia clave entre los dos es la 
+existencia de un punto decimal; los enteros son números enteros, 
+mientras que los floats contienen un valor decimal.
+
+
+---- Valores absolutos -------
+Un valor absoluto en matemáticas es el número no negativo sin su signo. 
+El uso de un valor absoluto puede ser útil en diferentes situaciones, 
+incluido nuestro ejemplo de buscar determinar la distancia entre dos 
+planetas.
+
+
+a = 39 - 16
+b = 16 - 39
+
+
+----- Redondeo ------- 
+La función de python incorporada llamada round también es útil. 
+Usada para redondear al entero más cercano si el valor decimal .5 es 
+mayor o mayor, o hacia abajo si es menor que .5.
+
+
+
+
+----- Biblioteca Math -----
+
+
+Python tiene bibliotecas para proporcionar operaciones y cálculos más 
+avanzados. Una de las más comunes es la biblioteca math. math te permite 
+realizar el redondeo con floor y ceil, proporcionar el valor de pi, y
+muchas otras operaciones.
+

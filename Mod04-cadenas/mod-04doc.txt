@@ -1,0 +1,101 @@
+Cadenas
+En Python, las cadenas son inmutables. Es decir, no pueden cambiar.
+
+El truco aquí es que debes usar un valor devuelto. Cuando agregas cadenas, 
+Python no modifica ninguna cadena, pero devuelve una nueva cadena como resultado.
+
+
+Uso de comillas
+Puedes incluir cadenas de Python entre comillas simples, dobles o triples. 
+Aunque puedes usarlos indistintamente, es mejor usar un tipo de manera consistente 
+dentro de un proyecto.
+Del mismo modo, si hay comillas simples (o un apóstrofo, como en Moon en el siguiente
+ejemplo) en cualquier lugar dentro de la cadena, encierra toda la cadena entre comillas dobles.
+
+Si no se alternan comillas simples y dobles, el intérprete de Python puede provocar un error de sintaxis.
+
+Cuando el texto tiene una combinación de comillas simples y dobles, puedes utilizar comillas triples para 
+evitar problemas con el intérprete.
+
+
+Textos multilínea.
+
+Hay algunas maneras diferentes de definir varias líneas de texto como una sola variable. Las formas más 
+comunes son:
+
+Utiliza un carácter de nueva línea ().\n
+Utiliza comillas triples (""").
+
+
+Métodos para string de Python
+Los métodos de cadena forman parte del tipo str. Esto significa que los métodos existen 
+como variables de cadena o parte de la cadena directamente
+
+Title() = le da formato de título a una cadena, por ejemplo: Xmmm Xmm Xmmmm
+Split () = el método separará la cadena en cada espacio si no tiene param, en caso de que
+    lo tenga, entonces lo dividirá tomando como referencia param. Crea un lista de cada 
+    palabra o número que está separado por un espacio:
+
+
+Buscar en cadena
+
+Además de usar un bucle, algunos métodos de cadena pueden buscar contenido antes del 
+procesamiento, sin la necesidad de un bucle.
+
+La forma más sencilla de descubrir si existe una palabra, un carácter o un grupo de 
+caracteres determinados en una cadena es sin usar un método: in.
+
+Para encontrar la posición de una palabra o caracter, usa find(param) en donde 
+-1 es que no se encontró el parámetro introducido 
+n posición del param.
+
+count(param) devuelve el número de apariciones de param 
+
+Las cadenas en Python distinguen entre mayúsculas y minúsculas, lo que significa que Luna 
+(Moon) y luna (moon) se consideran palabras diferentes.
+
+lower() formatea una cadena a minúsculas 
+upper() formatea una cadena a mayúsculas
+
+
+Al igual que el método .isnumeric(), puedes comprobar si hay cadenas que se parezcan a 
+decimales .isdecimal()
+
+Dato: Podría ser sorprendente saber que "-70".isnumeric() regresa False. Esto se debe a
+ que todos los caracteres de la cadena tendrían que ser numéricos y el guión (-) no es 
+ numérico. Si necesitas comprobar los números negativos en una cadena, el método 
+ .isnumeric() no funcionaría.
+
+ Hay validaciones adicionales que puedes aplicar en cadenas para comprobar si hay valores.
+  Para los números negativos, el guión está prefijado al número, y eso se puede detectar 
+  con el método: .startswith().
+
+endsWith() -> verifica el último carácter de una cadena
+
+ Puedes utilizar el método .replace() para buscar y reemplazar apariciones de un carácter 
+ o grupo de caracteres:
+
+ join() puede unir el array que Split retorna.
+
+
+ Formato de cadenas de texto en Python
+
+ La forma más sencilla de presentar información de texto con Python es usar la función 
+ print(). Te resultará fundamental obtener información en variables y otras estructuras de 
+ datos en cadenas que puedan usar print().
+
+ Formato con signo de porcentaje %
+ El marcador de posición es %s, y la variable se pasa al texto después del carácter 
+ % fuera de la cadena. 
+
+ El método format()
+ El método .format()utiliza llaves ({}) como marcadores de posición dentro de una cadena y 
+ utiliza la asignación de variables para reemplazar el texto.
+
+
+ Cadenas f 
+ A partir de la versión 3.6 de Python, es posible usar f-strings. Estas cadenas parecen 
+ plantillas con las mismas variables con nombre que las del código.
+ Se pueden usar tanto variables como funciones pues Con las cadenas f, no es necesario 
+ asignar un valor a una variable de antemano.
+
